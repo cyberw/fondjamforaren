@@ -4,9 +4,15 @@ Fondjämföraren kan användas för att jämföra hur breda/smala två indexfond
 
 Den använder sig av informationen som fondbolagen rapporterar in till [Finansinspektionen](https://www.fi.se/sv/vara-register/fondinnehav-per-kvartal/).
 
-Jag rekommenderar att du använder [uv](https://docs.astral.sh/uv/getting-started/installation/) för installation.
+## Användning
+
+Installera [uv](https://docs.astral.sh/uv/getting-started/installation/) först, om du inte redan har det.
 
 ```text
+❯ git clone https://github.com/cyberw/fondjamforaren.git
+Cloning into 'fondjamforaren'...
+...
+❯ cd fondjamforaren
 ❯ uv run download.py
 Letar efter senaste filen på https://www.fi.se/sv/vara-register/fondinnehav-per-kvartal/...
 Laddar ner: https://www.fi.se/FondInnehavLista/download?filnamn=Fondinnehav_2025Q4_2026-03-17 17.09.zip
@@ -54,6 +60,8 @@ För att göra analysen skriver du bara in två fonder som parametrar:
 
 Ovanstående visar t ex se att Avanza Global är betydligt tyngre i Microsoft och Amazon (kanske pga färre aktier i indexet man följer?), men har ett betydligt mindre innehav i GE än Swedbank Access Global (kanske har den uteslutits pga ESG?).
 
+## Andra jämförelser
+
 Du kan även jämföra en aktivt förvaltad med en passiv, vilket ger en viss indikation av hur "aktiv" fonden verkligen är. Allra träffsäkrast är det förstås om du hittar en passiv fond som följer den aktiva fondens jämförelseindex.
 
 Här kan man t ex se att AMF Aktiefond Global's största avvikelse från Avanza Global är deras innehav i Tencent och TSMC:
@@ -94,5 +102,3 @@ Här kan man t ex se att AMF Aktiefond Global's största avvikelse från Avanza 
  Rollins                               │    0.95% │
  ...                                   │          │
  ```
-
- Stjärnan indikerar att värdepappret finns i bägge fonder.
