@@ -15,6 +15,8 @@ Klart! 706 XML-filer har sparats i mappen 'fi_data'.
 
 För att göra analysen skriver du bara in två fonder. Namnet måste matcha exakt.
 
+Här kan man t ex se att Avanza Global är betydligt tyngre i Microsoft och Amazon (kanske pga färre aktier i indexet man följer?), men har ett betydligt mindre innehav i GE än Swedbank Access Global (kanske har den uteslutits pga ESG?).
+
 ```text
 ❯ uv run main.py "Avanza Global" "Swedbank Robur Access Global"
  Namn                        ┃ Skillnad ┃
@@ -52,7 +54,7 @@ För att göra analysen skriver du bara in två fonder. Namnet måste matcha exa
  ...                         │          │
 ```
 
-Du kan även jämföra en aktivt förvaltad med en passiv (men avvikelselistan blir ganska lång), vilket är användbart för att se hur "aktiv" fonden verkligen är (om du kan hitta en indexfond som följer ett rimligt index).
+Du kan även jämföra en aktivt förvaltad med en passiv, vilket ger en viss indikation av hur "aktiv" fonden verkligen är. Allra träffsäkrast är det förstås om du hittar en passiv fond som följer den aktiva fondens jämförelseindex.
 
 Här kan man t ex se att AMF Aktiefond Global's största avvikelse från index är sitt innehav i Tencent och TSMC.
 
