@@ -6,9 +6,11 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "beautifulsoup4>=4.14.3",
+    "click>=8.3.1",
     "lxml>=6.0.2",
     "lxml-stubs>=0.5.1",
     "requests>=2.32.5",
+    "typer>=0.24.1",
 ]
 
 [tool.cibuildwheel]
