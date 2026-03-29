@@ -1,0 +1,28 @@
+[project]
+name = "fondjamforaren"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "lxml>=6.0.2",
+    "lxml-stubs>=0.5.1",
+    "requests>=2.32.5",
+]
+
+[tool.cibuildwheel]
+# Explicitly skip free-threaded (no-GIL) wheels for Python 3.13 and future 3.14
+skip = ["cp313t-*", "cp314t-*", ]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 120
+lint.ignore = ["E501", "E402", "E713", "E731"]
+lint.select = ["E", "F", "W", "UP", "I", "ARG001"]
+lint.dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?)|resp)$"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.8",
+]
