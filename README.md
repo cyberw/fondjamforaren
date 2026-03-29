@@ -1,4 +1,6 @@
-# Ett verktyg för att räkna ut skillnaden mellan olika fonders innehav
+# Fondjämföraren
+
+Ett verktyg för att räkna ut skillnaden mellan två olika fonders innehav.
 
 Fondjämföraren kan användas för att jämföra hur breda/smala två indexfonder är, men också ge en uppfattning om hur mycket en aktivt förvaltad fond verkligen avviker från sitt index.
 
@@ -59,6 +61,8 @@ För att göra analysen skriver du bara in två fonder som parametrar:
 ```
 
 Ovanstående visar t ex se att Avanza Global är betydligt tyngre i Microsoft och Amazon (kanske pga färre aktier i indexet man följer?), men har ett betydligt mindre innehav i GE än Swedbank Access Global (kanske har den uteslutits pga ESG?).
+
+"Skillnad" är alltså skillnaden i procentandel av fonden. Avanza Global har t ex 4.83% av sitt kapital i Microsoft och Swedbank har 4.06% - alltså är skillnaden 0.77%.
 
 ## Andra jämförelser
 
