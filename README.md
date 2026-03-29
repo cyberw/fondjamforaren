@@ -65,7 +65,7 @@ Ovanstående visar t ex se att Avanza Global är betydligt tyngre i Microsoft oc
 
 "Skillnad" är alltså skillnaden i procentandel av fonden. Avanza Global har t ex 4.83% av sitt kapital i Microsoft och Swedbank har 4.06% - alltså är skillnaden 0.77%.
 
-"Summa skillnad" är helt enkelt summan av alla skillnader, delat på två. 0% innebär totalt identiska innehav, 100% betyder helt åtskilda. I och med skillnader i ESG-urval, aktie-andelsklasser så kan även fonder som följer liknande index ha 20-25% i skillnads-summa.
+"Summa skillnad" är helt enkelt summan av alla skillnader, delat på två. 0% innebär totalt identiska innehav, 100% betyder helt åtskilda. I och med skillnader i ESG-urval, olika aktie-andelsklasser, etc så kan även fonder som följer liknande index ha 20-25% i skillnads-summa.
 
 ## Andra jämförelser
 
