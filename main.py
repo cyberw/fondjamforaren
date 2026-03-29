@@ -53,6 +53,12 @@ def main(
     if len(d) > 30:
         table.add_row("...", "", "")
 
+    diffsum = 0
+    for instrument in d:
+        diffsum += abs(instrument.andel)
+
+    table.add_row("Summa skillnad (0-100%)", f"{diffsum / 2:.0f}%")
+
     Console().print(table)
 
 
