@@ -9,6 +9,7 @@ class Instrument:
     isin: str
     instrumentnamn: str
     andel: float
+    both: bool = False  # in both funds, only used for comparison
 
 
 @dataclass
