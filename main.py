@@ -51,7 +51,7 @@ def main(
         table.add_row(instrument.instrumentnamn, f"{instrument.andel:.2f}%")
 
     if len(d) > 30:
-        table.add_row("...", "", "")
+        table.add_row("...", "...")
 
     diffsum = 0
     for instrument in d:
