@@ -44,3 +44,4 @@ def get_fund(name: str) -> Fund:
                     instruments.append(Instrument(isin, instrumentnamn, andel))
 
             return Fund(fondnamn, instruments)
+    print(f"Fonden '{name}' kunde inte hittas.")

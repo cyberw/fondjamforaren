@@ -39,16 +39,19 @@ def main(
     logger.info(f"Comparing {fund1} and {fund2}...")
     f1 = get_fund(fund1)
     f2 = get_fund(fund2)
+    if not f1 or not f2:
+        return
     d = delta(f1, f2)
     d.sort(key=lambda instrument: abs(instrument.andel), reverse=True)
     table = Table(show_edge=False)
-    table.add_column("Namn", max_width=30)
-    table.add_column("Andel", justify="right")
-    table.add_column("")
+    table.add_column("Namn", max_width=40)
+    table.add_column("Skillnad", justify="right")
 
-    for instrument in d:
-        if abs(instrument.andel) > 0.2:
-            table.add_row(instrument.instrumentnamn, f"{instrument.andel:.2f}%", "*" if instrument.both else "")
+    for instrument in d[:30]:
+        table.add_row(instrument.instrumentnamn, f"{instrument.andel:.2f}%")
+
+    if len(d) > 30:
+        table.add_row("...", "", "")
 
     Console().print(table)
 
