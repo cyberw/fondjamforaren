@@ -13,7 +13,7 @@ Laddar ner: https://www.fi.se/FondInnehavLista/download?filnamn=Fondinnehav_2025
 Klart! 706 XML-filer har sparats i mappen 'fi_data'.
 ```
 
-För att göra analysen skriver du bara in två fonder. Namnet måste matcha exakt.
+För att göra analysen skriver du bara in två fonder.
 
 Här kan man t ex se att Avanza Global är betydligt tyngre i Microsoft och Amazon (kanske pga färre aktier i indexet man följer?), men har ett betydligt mindre innehav i GE än Swedbank Access Global (kanske har den uteslutits pga ESG?).
 
