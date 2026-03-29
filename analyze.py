@@ -18,7 +18,7 @@ class Fund:
     instruments: list[Instrument]
 
 
-xml_files = glob.glob("fi_data/**/*.xml")
+xml_files = glob.glob("fi_data/**/*.xml", recursive=True)
 
 
 def get_fund(name: str) -> Fund:
@@ -28,6 +28,9 @@ def get_fund(name: str) -> Fund:
 
         root = etree.fromstring(xml_data)
         ns = {"fi": "http://schemas.fi.se/publika/vardepappersfonder/20200331"}
+
+        # kommer nog behöva implementera ordning så vi prioriterar den senaste rapporten istället för bara första bästa
+        # kvartalsslut = root.xpath("//fi:Rapportinformation/fi:Kvartalsslut/text()", namespaces=ns)[0]
 
         fondnamn = root.xpath("//fi:Fondinformation/fi:Fond_namn/text()", namespaces=ns)[0]
         if fondnamn == name:
