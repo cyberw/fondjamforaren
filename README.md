@@ -1,5 +1,17 @@
-Doesn't actually compare funds yet, just prints all their holdings.
-
 uv run download.py
 
-uv run analyze.py
+Exempel:
+
+```text
+❯ uv run main.py "Avanza Global" "Swedbank Robur Access Global"
+US67066G1040 NVIDIA CORP 3.46%
+US0378331005 APPLE INC 3.16%
+US11135F1012 Broadcom -1.80%
+US0231351067 AMAZON.COM INC 1.51%
+US88160R1014 TESLA INC 1.28%
+US5949181045 MICROSOFT CORP 1.13%
+US46625H1005 JPMorgan Chase -1.09%
+US0846707026 Berkshire Hathaway B -0.91%
+US5324571083 Eli Lilly -0.76%
+US00287Y1091 AbbVie -0.51%
+```

@@ -44,4 +44,4 @@ def main(
 
 
 if __name__ == "__main__":
-    main("Avanza Global", "Swedbank Robur Access Global")
+    app()
