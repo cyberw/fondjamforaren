@@ -47,7 +47,7 @@ def main(
     table.add_column("")
 
     for instrument in d:
-        if abs(instrument.andel) > 0.5:
+        if abs(instrument.andel) > 0.2:
             table.add_row(instrument.instrumentnamn, f"{instrument.andel:.2f}%", "*" if instrument.both else "")
 
     Console().print(table)
